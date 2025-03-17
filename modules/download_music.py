@@ -6,12 +6,14 @@ from yt_dlp import YoutubeDL
 """
 Descarga la música de la url indicada
 """
-def descargar_musica(url):
+def descargar_video(url, imagen=False):
+    formato = 'mp4' if imagen else 'mp3'
+
     ydl_opts = {
         'format': 'bestaudio/best',
         'postprocessors': [{
             'key': 'FFmpegExtractAudio',
-            'preferredcodec': 'mp3',
+            'preferredcodec': formato,
             'preferredquality': '192',
         }],
         'ignoreerrors': True,
@@ -35,6 +37,17 @@ def descargar_musica(url):
     else: # Es un video
         modificar_metadata(file_path, info)
 
+def descargar_playlist():
+    pass
+
+def actualizar_playlist():
+    pass
+
+def actualizar_path():
+    pass
+
+
+
 if __name__ == "__main__":
     url = input("Ingrese la URL del video o playlist: ")
-    descargar_musica(url)
+    descargar_video(url)
