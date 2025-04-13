@@ -1,6 +1,6 @@
 from mutagen.easyid3 import EasyID3
 
-from modules.download_thumnails import *
+from download_thumnails import *
 
 """
 Modifica la metadata de un archivo de audio.
