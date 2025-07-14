@@ -3,6 +3,7 @@ from yt_dlp import YoutubeDL
 from metadata import modificar_metadata
 from paths import PATHS
 import requests
+import traceback
 
 """
 Descarga la música de la url indicada
@@ -39,5 +40,10 @@ def descargar_musica(url):
 if __name__ == "__main__":
     url = input("Ingrese la URL del video o playlist: ")
     while url:
-        descargar_musica(url)
+        try:
+            descargar_musica(url)
+        except:
+            with open("error_logs.txt", "a") as log_file:
+                log_file.write(f"Error al descargar música de la URL {url}:\n")
+                log_file.write(traceback.format_exc() + "\n")
         url = input("Ingrese la URL del video o playlist: ")

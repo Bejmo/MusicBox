@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "738711871224",
+    "project_id": "music-box-bj",
+    "storage_bucket": "music-box-bj.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738711871224:android:dc324d25c1d88605bfe50d",
+        "android_client_info": {
+          "package_name": "com.musicbox"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrNRSshdYE5pyyJeSnW5ieKO_GsCtMplw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

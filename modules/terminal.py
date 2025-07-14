@@ -1,5 +1,6 @@
 from download_music import descargar_musica
 from yt_dlp import YoutubeDL
+import os
 
 def actualizar_playlist(playlist_url, num):
     ydl_opts = {
@@ -25,4 +26,4 @@ def terminal():
 playlist_url = input("Playlist: ")
 num = input("Numero de canciones a descargar: ")
 actualizar_playlist(playlist_url, num)
-terminal() 
+terminal()
