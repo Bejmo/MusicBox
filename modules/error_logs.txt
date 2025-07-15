@@ -1,0 +1,2384 @@
+Error al descargar música de la URL https://www.youtube.com/watch?v=6KqrfvqncQE:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=QRnXNhDnqbk:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=nyHEDCnEqLM:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Uh.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 40, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Uh.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=CIhJwU4uPyw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=jev22nDWJRw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=PsM66B1dGoM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=oCdynJsIPvQ:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=TyW54MYud8M:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=BfEmsMAZq6o:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=zjA2uk593I4:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=r40jBVuUZ14:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=OXsrH218Dak:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=F3qqLaGHBg8:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=mOF4agou4JU:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=3TVTRUMI2og:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=pqO6xFFguDI:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=DSvv7bX2uik:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=9rNB9MHtM3g:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=jE-JJ1HemwI:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=vt7MrdE3kTg:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=HX0YZrdyt28:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=oWlSE7QkpCU:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=2Ki1KZa7Tx0:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=lc9mNHUdB7g:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=JFrUTJYM7lA:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=dVsO6s5OrVI:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=m2AIOKiDhTQ:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=QUFMDTm65wI:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=PXfHBfPHrVM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=4CdscgHngBY:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=5ePNPjGs7KY:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=Ja3OG1dusD8:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=C9NRPUZSXlk:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=imiLzgUYlbM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=7NP_XznG0bw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=wGDZ9De9ehk:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=07d6EgCNx0I:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=CjEDMB9ZGok:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=Pai07x00NBc:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=KrP_35kcMjM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=fswrh_LejL4:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=6B63o95gHUo:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=5lec2mhJ-u0:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=90dpkWci8S0:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=p_kQ3VX8PgU:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=XCdvGud84NQ:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=YE3C-5ltpb8:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/FULL_ICE_prod._ORODEMBOW.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 40, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/FULL_ICE_prod._ORODEMBOW.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=KAmtHvYRxIg:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/REINA.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 40, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/REINA.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=GicaUTUSe3k:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/DEL_ESTUDIO_AL_ESTADIO.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 40, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/DEL_ESTUDIO_AL_ESTADIO.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=OtYDbXzKRSM:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/EL_CHACAL.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 40, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/EL_CHACAL.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=EN-IcV7ppVY:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/antes_de_perderte_OG_Version.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 40, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/antes_de_perderte_OG_Version.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=UwbzfGVHc3o:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Cartier.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 40, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Cartier.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=cTegldcctv8:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Te_Diria.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 40, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Te_Diria.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=wGsFm3qb2hs:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/G_WAGON.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 40, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/G_WAGON.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=orpVvsHKZ_o:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Sangre_y_Fe.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 40, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Sangre_y_Fe.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=nFJumY2OihQ:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=dK6E8_iavrE:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=7Ug8mOmtym0:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=6rTlJXBHceI:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=AMP8kCVEqNc:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=qx0Ns9PyOvA:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/All_Eyez_On_Me.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 40, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/All_Eyez_On_Me.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=EpgoMh9ZVYY:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=mOF4agou4JU:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=h0MmfzKfHrw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=3TVTRUMI2og:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=DSvv7bX2uik:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=Pai07x00NBc:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=fswrh_LejL4:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=8zHHpS5oWpM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=V0It7z6xjFk:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=hpri40umdP0:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=H28QWNVn5LI:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=YVbUIdg3moY:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/NUNCA_VOY_SOLO.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 40, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/NUNCA_VOY_SOLO.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=ynTI_IJoOa0:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Bye.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 40, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Bye.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=iWDEpF-vlTI:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/BURBERRY.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 40, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/BURBERRY.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=jOmKGxxhufw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=fx130JZI2Ls:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=4FQPEErRtjA:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=StOcfVeaZ60:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Safaera.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 40, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Safaera.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=wYmJjCsKgR4:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Vida_Rockstar.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 40, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Vida_Rockstar.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=BCQddiLmyRc:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/ALIOLI.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 40, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/ALIOLI.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=W2LCxztwbhE:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=HOK1hit9vh8:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=pu3sd2_yKs0:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=n_izf4FNTqI:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=-s0N0aRSD9I:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=x9K0TPP4PIw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=e8JPkA09iag:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=BXxTl4coFFM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=iP662Q93kL0:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=cTmkydjb8Wk:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Jjjj.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 40, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Jjjj.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=WtxoCbZ43xc:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=I8io1OkxUzM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=saOrKZ3k140:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=kSW2p-KHfe0:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Mala_Mia.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 40, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Mala_Mia.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=p_sf9DFRgBE:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=SG90gFsen1E:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=aj2cCq-3Bf0:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=9gV5K4F9YdQ:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=qghxrzmMoKQ:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=0vtIJORwWCQ:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=WyQOrMnmEjQ:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 29, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=2RX1VJZ0CLI:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/DESEO.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 41, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/DESEO.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=6KqrfvqncQE:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=QRnXNhDnqbk:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=M_zaxm0qH6E:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Imperio.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 41, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Imperio.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=CIhJwU4uPyw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=jev22nDWJRw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=PsM66B1dGoM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=oCdynJsIPvQ:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=TyW54MYud8M:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=BfEmsMAZq6o:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=zjA2uk593I4:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=r40jBVuUZ14:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=OXsrH218Dak:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=F3qqLaGHBg8:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=Ea0O4zWGVKg:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/casado_con_l_ju_go.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 41, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/casado_con_l_ju_go.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=3TVTRUMI2og:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=pqO6xFFguDI:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=DSvv7bX2uik:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=9rNB9MHtM3g:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=jE-JJ1HemwI:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=vt7MrdE3kTg:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=HX0YZrdyt28:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=oWlSE7QkpCU:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=lc9mNHUdB7g:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=JFrUTJYM7lA:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=dVsO6s5OrVI:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=PXfHBfPHrVM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=4CdscgHngBY:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=5ePNPjGs7KY:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=Ja3OG1dusD8:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=C9NRPUZSXlk:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=imiLzgUYlbM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=7NP_XznG0bw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=wGDZ9De9ehk:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=07d6EgCNx0I:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=CjEDMB9ZGok:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=Pai07x00NBc:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=KrP_35kcMjM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=fswrh_LejL4:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=6B63o95gHUo:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=5lec2mhJ-u0:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=90dpkWci8S0:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=Hcwx191hInk:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/No_Me_Conocen_Remix_con_DUKI_Rei_Tiago_PZK.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 41, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/No_Me_Conocen_Remix_con_DUKI_Rei_Tiago_PZK.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=p_kQ3VX8PgU:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=XCdvGud84NQ:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=YE3C-5ltpb8:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/FULL_ICE_prod._ORODEMBOW.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 41, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/FULL_ICE_prod._ORODEMBOW.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=YVbUIdg3moY:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/NUNCA_VOY_SOLO.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 41, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/NUNCA_VOY_SOLO.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=ynTI_IJoOa0:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Bye.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 41, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Bye.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=jOmKGxxhufw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=fx130JZI2Ls:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=4FQPEErRtjA:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=wYmJjCsKgR4:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Vida_Rockstar.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 41, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Vida_Rockstar.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=W2LCxztwbhE:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=HOK1hit9vh8:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=pu3sd2_yKs0:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=n_izf4FNTqI:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=-s0N0aRSD9I:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=x9K0TPP4PIw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=e8JPkA09iag:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=BXxTl4coFFM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=iP662Q93kL0:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=WtxoCbZ43xc:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=I8io1OkxUzM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=saOrKZ3k140:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=p_sf9DFRgBE:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=SG90gFsen1E:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=qghxrzmMoKQ:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=0vtIJORwWCQ:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=2RX1VJZ0CLI:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/DESEO.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 41, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/DESEO.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=6KqrfvqncQE:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=QRnXNhDnqbk:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=CIhJwU4uPyw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=jev22nDWJRw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=PsM66B1dGoM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=oCdynJsIPvQ:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=TyW54MYud8M:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=BfEmsMAZq6o:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=zjA2uk593I4:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=r40jBVuUZ14:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=OXsrH218Dak:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=F3qqLaGHBg8:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=3TVTRUMI2og:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=pqO6xFFguDI:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=DSvv7bX2uik:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=9rNB9MHtM3g:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=jE-JJ1HemwI:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=vt7MrdE3kTg:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=HX0YZrdyt28:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=oWlSE7QkpCU:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=lc9mNHUdB7g:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=JFrUTJYM7lA:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=dVsO6s5OrVI:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=PXfHBfPHrVM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=4CdscgHngBY:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=5ePNPjGs7KY:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=Ja3OG1dusD8:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=C9NRPUZSXlk:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=imiLzgUYlbM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=7NP_XznG0bw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=wGDZ9De9ehk:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=07d6EgCNx0I:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=CjEDMB9ZGok:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=Pai07x00NBc:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=KrP_35kcMjM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=fswrh_LejL4:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=6B63o95gHUo:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=5lec2mhJ-u0:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=90dpkWci8S0:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=Hcwx191hInk:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/No_Me_Conocen_Remix_con_DUKI_Rei_Tiago_PZK.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 41, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/No_Me_Conocen_Remix_con_DUKI_Rei_Tiago_PZK.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=p_kQ3VX8PgU:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=XCdvGud84NQ:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=jOmKGxxhufw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=fx130JZI2Ls:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=4FQPEErRtjA:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=wYmJjCsKgR4:
+Traceback (most recent call last):
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 251, in _openfile
+    fileobj = open(filename, "rb+" if writable else "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Vida_Rockstar.mp4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 41, in descargar_musica
+    modificar_metadata(file_path, info)
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/metadata.py", line 24, in modificar_metadata
+    audio = EasyID3(archivo)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/easyid3.py", line 170, in __init__
+    self.load(filename)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 185, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 154, in wrapper
+    with _openfile(self, filething, filename, fileobj,
+  File "/usr/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/bejmo/.local/lib/python3.10/site-packages/mutagen/_util.py", line 272, in _openfile
+    raise MutagenError(e)
+mutagen.MutagenError: [Errno 2] No such file or directory: '/mnt/d/Documents/Programacion/GitHub/MusicBox/AIMP/🎵Music🎵/Vida_Rockstar.mp4'
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=W2LCxztwbhE:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=HOK1hit9vh8:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=pu3sd2_yKs0:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=n_izf4FNTqI:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=-s0N0aRSD9I:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=x9K0TPP4PIw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=e8JPkA09iag:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=BXxTl4coFFM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=iP662Q93kL0:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=WtxoCbZ43xc:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=I8io1OkxUzM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=saOrKZ3k140:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=p_sf9DFRgBE:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=SG90gFsen1E:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=qghxrzmMoKQ:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=0vtIJORwWCQ:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=6KqrfvqncQE:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=QRnXNhDnqbk:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=CIhJwU4uPyw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=jev22nDWJRw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=PsM66B1dGoM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=oCdynJsIPvQ:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=TyW54MYud8M:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=BfEmsMAZq6o:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=zjA2uk593I4:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=r40jBVuUZ14:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=OXsrH218Dak:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=F3qqLaGHBg8:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=3TVTRUMI2og:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=pqO6xFFguDI:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=DSvv7bX2uik:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=9rNB9MHtM3g:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=jE-JJ1HemwI:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=vt7MrdE3kTg:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=HX0YZrdyt28:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=oWlSE7QkpCU:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=lc9mNHUdB7g:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=JFrUTJYM7lA:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=dVsO6s5OrVI:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=PXfHBfPHrVM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=4CdscgHngBY:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=5ePNPjGs7KY:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=Ja3OG1dusD8:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=C9NRPUZSXlk:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=imiLzgUYlbM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=7NP_XznG0bw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=wGDZ9De9ehk:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=07d6EgCNx0I:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=CjEDMB9ZGok:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=Pai07x00NBc:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=KrP_35kcMjM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=fswrh_LejL4:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=6B63o95gHUo:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=5lec2mhJ-u0:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=90dpkWci8S0:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=p_kQ3VX8PgU:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=XCdvGud84NQ:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=jOmKGxxhufw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=fx130JZI2Ls:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=4FQPEErRtjA:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=W2LCxztwbhE:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=HOK1hit9vh8:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=pu3sd2_yKs0:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=n_izf4FNTqI:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=-s0N0aRSD9I:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=x9K0TPP4PIw:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=e8JPkA09iag:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=BXxTl4coFFM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=iP662Q93kL0:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=WtxoCbZ43xc:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=I8io1OkxUzM:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=saOrKZ3k140:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=p_sf9DFRgBE:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=SG90gFsen1E:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=qghxrzmMoKQ:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar música de la URL https://www.youtube.com/watch?v=0vtIJORwWCQ:
+Traceback (most recent call last):
+  File "/mnt/d/Documents/Programacion/GitHub/MusicBox/modules/download_music.py", line 30, in descargar_musica
+    if 'entries' in info:  # Es una playlist
+TypeError: argument of type 'NoneType' is not iterable
+
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=6KqrfvqncQE]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=QRnXNhDnqbk]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=CIhJwU4uPyw]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=jev22nDWJRw]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=PsM66B1dGoM]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=oCdynJsIPvQ]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=TyW54MYud8M]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=BfEmsMAZq6o]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=zjA2uk593I4]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=r40jBVuUZ14]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=OXsrH218Dak]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=F3qqLaGHBg8]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=3TVTRUMI2og]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=pqO6xFFguDI]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=DSvv7bX2uik]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=9rNB9MHtM3g]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=jE-JJ1HemwI]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=vt7MrdE3kTg]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=HX0YZrdyt28]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=oWlSE7QkpCU]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=lc9mNHUdB7g]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=JFrUTJYM7lA]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=dVsO6s5OrVI]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=PXfHBfPHrVM]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=4CdscgHngBY]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=5ePNPjGs7KY]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=Ja3OG1dusD8]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=C9NRPUZSXlk]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=imiLzgUYlbM]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=7NP_XznG0bw]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=wGDZ9De9ehk]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=07d6EgCNx0I]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=CjEDMB9ZGok]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=Pai07x00NBc]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=KrP_35kcMjM]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=fswrh_LejL4]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=6B63o95gHUo]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=5lec2mhJ-u0]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=90dpkWci8S0]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=p_kQ3VX8PgU]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=XCdvGud84NQ]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=jOmKGxxhufw]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=fx130JZI2Ls]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=4FQPEErRtjA]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=W2LCxztwbhE]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=HOK1hit9vh8]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=pu3sd2_yKs0]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=n_izf4FNTqI]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=-s0N0aRSD9I]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=x9K0TPP4PIw]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=e8JPkA09iag]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=BXxTl4coFFM]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=iP662Q93kL0]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=WtxoCbZ43xc]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=I8io1OkxUzM]
+Error al descargar el vídeo: [https://www.youtube.com/watch?v=saOrKZ3k140]

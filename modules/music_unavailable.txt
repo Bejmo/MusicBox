@@ -1,0 +1,105 @@
+ERROR: [youtube] 6KqrfvqncQE: Video unavailable. This video is not available
+ERROR: [youtube] QRnXNhDnqbk: Video unavailable. This video is not available
+WARNING: [youtube] nyHEDCnEqLM: Some tv client https formats have been skipped as they are DRM protected. The current session may have an experiment that applies DRM to all videos on the tv client. See  https://github.com/yt-dlp/yt-dlp/issues/12563  for more details.
+WARNING: [youtube] nyHEDCnEqLM: Some web client https formats have been skipped as they are missing a url. The current session may have the SSAP (server-side ads) experiment which interferes with yt-dlp. Please see  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details.
+ERROR: [youtube] CIhJwU4uPyw: Video unavailable. This video is not available
+ERROR: [youtube] jev22nDWJRw: Video unavailable. This video is not available
+ERROR: [youtube] PsM66B1dGoM: Video unavailable. This video is not available
+ERROR: [youtube] oCdynJsIPvQ: Video unavailable. This video is not available
+ERROR: [youtube] TyW54MYud8M: Video unavailable. This video is not available
+ERROR: [youtube] BfEmsMAZq6o: Video unavailable. This video is not available
+ERROR: [youtube] zjA2uk593I4: Video unavailable. This video is not available
+ERROR: [youtube] r40jBVuUZ14: Video unavailable. This video is not available
+ERROR: [youtube] OXsrH218Dak: Video unavailable. This video is not available
+ERROR: [youtube] F3qqLaGHBg8: Video unavailable. This video is not available
+ERROR: [youtube] mOF4agou4JU: Video unavailable. This video is not available
+ERROR: [youtube] 3TVTRUMI2og: Video unavailable. This video is not available
+ERROR: [youtube] pqO6xFFguDI: Video unavailable. This video is not available
+ERROR: [youtube] DSvv7bX2uik: Video unavailable. This video is not available
+ERROR: [youtube] 9rNB9MHtM3g: Video unavailable. This video is not available
+ERROR: [youtube] jE-JJ1HemwI: Video unavailable. This video is not available
+ERROR: [youtube] vt7MrdE3kTg: Video unavailable. This video is not available
+ERROR: [youtube] HX0YZrdyt28: Video unavailable. This video is not available
+ERROR: [youtube] oWlSE7QkpCU: Video unavailable. This video is not available
+ERROR: [youtube] 2Ki1KZa7Tx0: Video unavailable. This video is not available
+ERROR: [youtube] lc9mNHUdB7g: Video unavailable. This video is not available
+ERROR: [youtube] JFrUTJYM7lA: Video unavailable. This video is not available
+ERROR: [youtube] dVsO6s5OrVI: Video unavailable. This video is not available
+ERROR: [youtube] m2AIOKiDhTQ: Video unavailable. This video is not available
+ERROR: [youtube] QUFMDTm65wI: Video unavailable. This video is not available
+ERROR: [youtube] PXfHBfPHrVM: Video unavailable. This video is not available
+ERROR: [youtube] 4CdscgHngBY: Video unavailable. This video is not available
+ERROR: [youtube] 5ePNPjGs7KY: Video unavailable. This video is not available
+ERROR: [youtube] Ja3OG1dusD8: Video unavailable. This video is not available
+ERROR: [youtube] C9NRPUZSXlk: Video unavailable. This video is not available
+ERROR: [youtube] imiLzgUYlbM: Video unavailable. This video is not available
+ERROR: [youtube] 7NP_XznG0bw: Video unavailable. This video is not available
+ERROR: [youtube] wGDZ9De9ehk: Video unavailable. This video is not available
+ERROR: [youtube] 07d6EgCNx0I: Video unavailable. This video is not available
+ERROR: [youtube] CjEDMB9ZGok: Video unavailable. This video is not available
+ERROR: [youtube] Pai07x00NBc: Video unavailable. This video is not available
+ERROR: [youtube] KrP_35kcMjM: Video unavailable. This video is not available
+ERROR: [youtube] fswrh_LejL4: Video unavailable. This video is not available
+ERROR: [youtube] 6B63o95gHUo: Video unavailable. This video is not available
+ERROR: [youtube] 5lec2mhJ-u0: Video unavailable. This video is not available
+ERROR: [youtube] 90dpkWci8S0: Video unavailable. This video is not available
+ERROR: [youtube] p_kQ3VX8PgU: Video unavailable. This video is not available
+ERROR: [youtube] XCdvGud84NQ: Video unavailable. This video is not available
+WARNING: [youtube] YE3C-5ltpb8: Some tv client https formats have been skipped as they are DRM protected. The current session may have an experiment that applies DRM to all videos on the tv client. See  https://github.com/yt-dlp/yt-dlp/issues/12563  for more details.
+WARNING: [youtube] YE3C-5ltpb8: Some web client https formats have been skipped as they are missing a url. The current session may have the SSAP (server-side ads) experiment which interferes with yt-dlp. Please see  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details.
+WARNING: [youtube] KAmtHvYRxIg: Some tv client https formats have been skipped as they are DRM protected. The current session may have an experiment that applies DRM to all videos on the tv client. See  https://github.com/yt-dlp/yt-dlp/issues/12563  for more details.
+WARNING: [youtube] KAmtHvYRxIg: Some web client https formats have been skipped as they are missing a url. The current session may have the SSAP (server-side ads) experiment which interferes with yt-dlp. Please see  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details.
+WARNING: [youtube] GicaUTUSe3k: Some tv client https formats have been skipped as they are DRM protected. The current session may have an experiment that applies DRM to all videos on the tv client. See  https://github.com/yt-dlp/yt-dlp/issues/12563  for more details.
+WARNING: [youtube] GicaUTUSe3k: Some web client https formats have been skipped as they are missing a url. The current session may have the SSAP (server-side ads) experiment which interferes with yt-dlp. Please see  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details.
+WARNING: [youtube] OtYDbXzKRSM: Some tv client https formats have been skipped as they are DRM protected. The current session may have an experiment that applies DRM to all videos on the tvt. See  https://github.com/yt-dlp/yt-dlp/issues/12563  for more details.
+WARNING: [youtube] OtYDbXzKRSM: Some web client https formats have been skipped as they are missing a url. The current session may have the SSAP (server-side ads) experiment which interferes with yt-dlp. Please see  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details.
+WARNING: [youtube] EN-IcV7ppVY: Some tv client https formats have been skipped as they are DRM protected. The current session may have an experiment that applies DRM to all videos on the tv client. See  https://github.com/yt-dlp/yt-dlp/issues/12563  for more details.
+WARNING: [youtube] EN-IcV7ppVY: Some web client https formats have been skipped as they are missing a url. The current session may have the SSAP (server-side ads) experiment which interferes with yt-dlp. Please see  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details.
+WARNING: [youtube] UwbzfGVHc3o: Some tv client https formats have been skipped as they are DRM protected. The current session may have an experiment that applies DRM to all videos on the tv client. See  https://github.com/yt-dlp/yt-dlp/issues/12563  for more details.
+WARNING: [youtube] UwbzfGVHc3o: Some web client https formats have been skipped as they are missing a url. The current session may have the SSAP (server-side ads) experiment which interferes with yt-dlp. Please see  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details.
+WARNING: [youtube] cTegldcctv8: Some tv client https formats have been skipped as they are DRM protected. The current session may have an experiment that applies DRM to all videos on the tv client. See  https://github.com/yt-dlp/yt-dlp/issues/12563  for more details.
+WARNING: [youtube] cTegldcctv8: Some web client https formats have been skipped as they are missing a url. The current session may have the SSAP (server-side ads) experiment which interferes with yt-dlp. Please see  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details.
+WARNING: [youtube] wGsFm3qb2hs: Some tv client https formats have been skipped as they are DRM protected. The current session may have an experiment that applies DRM to all videos on the tv client. See  https://github.com/yt-dlp/yt-dlp/issues/12563  for more details.
+WARNING: [youtube] wGsFm3qb2hs: Some web client https formats have been skipped as they are missing a url. The current session may have the SSAP (server-side ads) experiment which interferes with yt-dlp. Please see  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details.
+WARNING: [youtube] orpVvsHKZ_o: Some tv client https formats have been skipped as they are DRM protected. The current session may have an experiment that applies DRM to all videos on the tv client. See  https://github.com/yt-dlp/yt-dlp/issues/12563  for more details.
+WARNING: [youtube] orpVvsHKZ_o: Some web client https formats have been skipped as they are missing a url. The current session may have the SSAP (server-side ads) experiment which interferes with yt-dlp. Please see  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details.
+WARNING: [youtube] qx0Ns9PyOvA: Some tv client https formats have been skipped as they are DRM protected. The current session may have an experiment that applies DRM to all videos on the tv client. See  https://github.com/yt-dlp/yt-dlp/issues/12563  for more details.
+WARNING: [youtube] qx0Ns9PyOvA: Some web client https formats have been skipped as they are missing a url. The current session may have the SSAP (server-side ads) experiment which interferes with yt-dlp. Please see  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details.
+WARNING: [youtube] YVbUIdg3moY: Some tv client https formats have been skipped as they are DRM protected. The current session may have an experiment that applies DRM to all videos on the tv client. See  https://github.com/yt-dlp/yt-dlp/issues/12563  for more details.
+WARNING: [youtube] YVbUIdg3moY: Some web client https formats have been skipped as they are missing a url. The current session may have the SSAP (server-side ads) experiment which interferes with yt-dlp. Please see  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details.
+WARNING: [youtube] ynTI_IJoOa0: Some tv client https formats have been skipped as they are DRM protected. The current session may have an experiment that applies DRM to all videos on the tv client. See  https://github.com/yt-dlp/yt-dlp/issues/12563  for more details.
+WARNING: [youtube] ynTI_IJoOa0: Some web client https formats have been skipped as they are missing a url. The current session may have the SSAP (server-side ads) experiment which interferes with yt-dlp. Please see  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details.
+WARNING: [youtube] iWDEpF-vlTI: Some tv client https formats have been skipped as they are DRM protected. The current session may have an experiment that applies DRM to all videos on the tv client. See  https://github.com/yt-dlp/yt-dlp/issues/12563  for more details.
+WARNING: [youtube] iWDEpF-vlTI: Some web client https formats have been skipped as they are missing a url. The current session may have the SSAP (server-side ads) experiment which interferes with yt-dlp. Please see  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details.
+ERROR: [youtube] jOmKGxxhufw: Video unavailable. This video is not available
+ERROR: [youtube] fx130JZI2Ls: Video unavailable. This video is not available
+ERROR: [youtube] 4FQPEErRtjA: Video unavailable. This video is not available
+WARNING: [youtube] StOcfVeaZ60: Some tv client https formats have been skipped as they are DRM protected. The current session may have an experiment that applies DRM to all videos on the tv client. See  https://github.com/yt-dlp/yt-dlp/issues/12563  for more details.
+WARNING: [youtube] StOcfVeaZ60: Some web client https formats have been skipped as they are missing a url. The current session may have the SSAP (server-side ads) experiment which interferes with yt-dlp. Please see  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details.
+WARNING: [youtube] wYmJjCsKgR4: Some tv client https formats have been skipped as they are DRM protected. The current session may have an experiment that applies DRM to all videos on the tv client. See  https://github.com/yt-dlp/yt-dlp/issues/12563  for more details.
+WARNING: [youtube] wYmJjCsKgR4: Some web client https formats have been skipped as they are missing a url. The current session may have the SSAP (server-side ads) experiment which interferes with yt-dlp. Please see  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details.
+WARNING: [youtube] BCQddiLmyRc: Some tv client https formats have been skipped as they are DRM protected. The current session may have an experiment that applies DRM to all videos on the tv client. See  https://github.com/yt-dlp/yt-dlp/issues/12563  for more details.
+WARNING: [youtube] BCQddiLmyRc: Some web client https formats have been skipped as they are missing a url. The current session may have the SSAP (server-side ads) experiment which interferes with yt-dlp. Please see  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details.
+ERROR: [youtube] W2LCxztwbhE: Video unavailable. This video is not available
+ERROR: [youtube] HOK1hit9vh8: Video unavailable. This video is not available
+ERROR: [youtube] pu3sd2_yKs0: Video unavailable. This video is not available
+ERROR: [youtube] n_izf4FNTqI: Video unavailable. This video is not available
+ERROR: [youtube] -s0N0aRSD9I: Video unavailable. This video is not available
+ERROR: [youtube] x9K0TPP4PIw: Video unavailable. This video is not available
+ERROR: [youtube] e8JPkA09iag: Video unavailable. This video is not available
+ERROR: [youtube] BXxTl4coFFM: Video unavailable. This video is not available
+ERROR: [youtube] iP662Q93kL0: Video unavailable. This video is not available
+WARNING: [youtube] cTmkydjb8Wk: Some tv client https formats have been skipped as they are DRM protected. The current session may have an experiment that applies DRM to all videos on the tv client. See  https://github.com/yt-dlp/yt-dlp/issues/12563  for more details.
+WARNING: [youtube] cTmkydjb8Wk: Some web client https formats have been skipped as they are missing a url. The current session may have the SSAP (server-side ads) experiment which interferes with yt-dlp. Please see  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details.
+ERROR: [youtube] WtxoCbZ43xc: Video unavailable. This video is not available
+ERROR: [youtube] I8io1OkxUzM: Video unavailable. This video is not available
+ERROR: [youtube] saOrKZ3k140: Video unavailable. This video is not available
+WARNING: [youtube] kSW2p-KHfe0: Some tv client https formats have been skipped as they are DRM protected. The current session may have an experiment that applies DRM to all videos on the tv client. See  https://github.com/yt-dlp/yt-dlp/issues/12563  for more details.
+WARNING: [youtube] kSW2p-KHfe0: Some web client https formats have been skipped as they are missing a url. The current session may have the SSAP (server-side ads) experiment which interferes with yt-dlp. Please see  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details.
+ERROR: [youtube] p_sf9DFRgBE: Video unavailable. This video is not available
+ERROR: [youtube] SG90gFsen1E: Video unavailable. This video is not available
+ERROR: [youtube] aj2cCq-3Bf0: Video unavailable. This video contains content from The Orchard Music, who has blocked it on copyright grounds
+ERROR: [youtube] 9gV5K4F9YdQ: Video unavailable. This video is not available
+ERROR: [youtube] qghxrzmMoKQ: Video unavailable. This video is not available
+ERROR: [youtube] 0vtIJORwWCQ: Video unavailable. This video is not available
+ERROR: [youtube] WyQOrMnmEjQ: Video unavailable. This video contains content from FIFA, who has blocked it on copyright grounds

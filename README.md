@@ -1,5 +1,9 @@
 # MusicBox
- Android App to download music
+Android App to download music (uses yt-dlp with Python).
 
-
-Para usar el teminal_mobile.py la carpeta AIMP tiene que estar al lado de la carpeta de este programa.
+## Requirements
+- To use `terminal_mobile.py`, the folder AIMP must be next to this program's folder.
+- The YouTube playlist that you use must:
+  -  Be AT LEAST Unlisted (CAN'T BE PRIVATE, OR THE PROGRAM WILL FAIL).
+  -  Sorted by "Date added (newest)" (if you want to use the "Update" function)
+- It is recommended to delete all the unavaliable videos from the YouTube playlist. It may cause a delay on the download.

@@ -69,7 +69,7 @@ def agregar_miniatura_a_mp3(mp3_path, image_path):
 
         # Guardar los cambios en el archivo .mp3
         audio.save()
-        print(f'Miniatura añadida a {mp3_path}')
+        # print(f'Miniatura añadida a {mp3_path}') # TODO PRINT OPCIONAL
 
     except Exception as e:
         print(f'Error al agregar la miniatura a {mp3_path}: {e}')  
@@ -80,7 +80,7 @@ Elimina la imagen en "image_path"
 def eliminar_imagen(image_path):
     try:
         os.remove(image_path)
-        print(f'Imagen {image_path} eliminada.')
+        # print(f'Imagen {image_path} eliminada.') # TODO PRINT OPCIONAL
     except Exception as e:
         print(f'Error al eliminar {image_path}: {e}')
 
