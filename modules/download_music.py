@@ -41,7 +41,7 @@ def descargar_musica(url):
             file_path = ydl.prepare_filename(info).replace('.webm', '.mp3').replace('.m4a', '.mp3')
             modificar_metadata(file_path, info)
         except:
-            with open("error_logs.txt", "a") as log_file:
+            with open("error_logs_unavailable.txt", "a") as log_file:
                 log_file.write(f"Error al descargar el vídeo: [{url}]\n")
 
 if __name__ == "__main__":

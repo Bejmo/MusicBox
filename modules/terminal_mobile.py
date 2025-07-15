@@ -73,6 +73,7 @@ def update_playlist(playlist_url):
 Downloads the first "num_downloads" songs of the playlist.
 If "num_downloads" is not used, it downloads the whole playlist.
 """
+# TODO Falta por modificar (hay que ponerlo igual que la función de "update")
 def download_playlist(playlist_url, num_downloads=False):
     # Options yt-dlp
     ydl_opts = {

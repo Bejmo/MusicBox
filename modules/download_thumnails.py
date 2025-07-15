@@ -72,7 +72,7 @@ def agregar_miniatura_a_mp3(mp3_path, image_path):
         # print(f'Miniatura añadida a {mp3_path}') # TODO PRINT OPCIONAL
 
     except Exception as e:
-        print(f'Error al agregar la miniatura a {mp3_path}: {e}')  
+        print(f'Error al agregar la miniatura a {mp3_path}: {e}')
 
 """
 Elimina la imagen en "image_path"

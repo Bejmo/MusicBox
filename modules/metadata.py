@@ -7,6 +7,7 @@ Modifica la metadata de un archivo de audio.
 Modificar el título, artista, álbum y fecha de lanzamiento.
 """
 def modificar_metadata(archivo, info):
+    titulo = "NO HAY TITULO"
     try:
         titulo = info.get('title', 'Desconocido')
     except: pass
@@ -20,8 +21,14 @@ def modificar_metadata(archivo, info):
         año = info.get('release_date', 'Desconocida')[:4]
     except: pass
 
-    # Modificar metadata (igual que en tu código original)
-    audio = EasyID3(archivo)
+    # Modificar metadata
+    try:
+        audio = EasyID3(archivo)
+    except: # TODO NO ESTA TESTEADO ESTA PARTE
+        print("Error al guardar los metadatos.")
+        with open("error_logs_not_saved.txt", 'a') as f:
+            f.write(f"No se ha guardado: {titulo} \n")
+    
     try:
         audio['title'] = titulo
     except: pass
@@ -34,7 +41,14 @@ def modificar_metadata(archivo, info):
     try:
         audio['date'] = año
     except: pass
-    audio.save()
+
+    try:
+        audio.save()
+    except: # TODO NO ESTA TESTEADO ESTA PARTE
+        print("Error al guardar los metadatos.")
+        with open("error_logs_not_saved.txt", 'a') as f:
+            f.write(f"No se ha guardado (.save): {titulo} \n")
+
 
     # Añadir carátula
     download_thumnail(info['id'], archivo)
