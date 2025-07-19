@@ -8,10 +8,8 @@ url_file_name = "terminal_input"
 
 """
 Downloads the new songs of the playlist (the ones that are now downloaded on the devide)
-
-Pre: (IMPORTANT) The YouTube playlist MUST be sorted by date of inclusion to the playlist if we want to update it correctly.
 """
-def update_playlist(playlist_url):
+def update_playlist(url):
     # Options yt-dlp
     ydl_opts = {
         'quiet': True,
@@ -22,12 +20,9 @@ def update_playlist(playlist_url):
 
     # Execute yt-dlp
     with YoutubeDL(ydl_opts) as ydl:
-        info = ydl.extract_info(playlist_url, download=False)
+        info = ydl.extract_info(url, download=False)
 
-        # Set download_folder's name
-        playlist_name = info.get('title', 'no_name') # Gets the playlist name (if not, returns "no_name")
-        PATHS['download_folder'] = os.path.join(PATHS['download_folder'], playlist_name)
-        if 'entries' in info:
+        if 'entries' in info: # It is a playlist
             """
             Format of "info":
 
@@ -42,20 +37,22 @@ def update_playlist(playlist_url):
             }
             """
 
+            # Set download_folder's name
+            playlist_name = info.get('title', 'no_name') # Gets the playlist name (if not, returns "no_name")
+            PATHS['download_folder'] = os.path.join(PATHS['download_folder'], playlist_name)
+
             entries = info['entries']
             urls = []
             for entry in entries:
                 file_name = ydl.prepare_filename(entry)
-                file_name = f"{file_name.rsplit('-[', 1)[0].strip()}.mp3" # TODO antes: file_name = f"{file_name.split('-')[0].strip()}.mp3"
+                file_name = f"{file_name.rsplit('-[', 1)[0].strip()}.mp3"
 
                 file_path = os.path.join(PATHS['download_folder'], file_name)
 
-                print(f"FILE PATH: {file_path}") # TODO
-
                 # If it is now downloaded, it is added to the URL's that will be downloaded
-                if not os.path.exists(file_path): urls.append(entry['url'])
-                else: print("NO SE HA AÑADIDO PORQUE YA ESTA") # TODO
-                print("\n")
+                if not os.path.exists(file_path):
+                    print(f"Se descargará la canción: {file_name}")
+                    urls.append(entry['url'])
 
 
             # Writes the URL's songs of the playlist in the file f"{url_file_name}_{i}.txt"
@@ -67,54 +64,14 @@ def update_playlist(playlist_url):
                     global url_file
                     url_file = f"{url_file_name}_{i}.txt"
                     break
+        
+        else: # It is a song
+            song_name = entry.get('title', '(unknown_title)')
+            print(f"Se descargará la canción: {song_name}")
+            descargar_musica(url)
+            return "not_a_playlist"
 
-
-"""
-Downloads the first "num_downloads" songs of the playlist.
-If "num_downloads" is not used, it downloads the whole playlist.
-"""
-# TODO Falta por modificar (hay que ponerlo igual que la función de "update")
-def download_playlist(playlist_url, num_downloads=False):
-    # Options yt-dlp
-    ydl_opts = {
-        'quiet': True,
-        'extract_flat': True,
-        'force_generic_extractor': True,
-    }
-
-    # Execute yt-dlp
-    with YoutubeDL(ydl_opts) as ydl:
-        info = ydl.extract_info(playlist_url, download=False)
-
-        # Set download_folder's name
-        playlist_name = info.get('title', 'no_name') # Gets the playlist name (if not, returns "no_name")
-        PATHS['download_folder'] = os.path.join(PATHS['download_folder'], playlist_name)
-
-        if 'entries' in info:
-            """
-            Formato de "info":
-
-            info = {
-                'id': 'PL123...',
-                'title': 'Nombre de la playlist',
-                'entries': [
-                    {'id': 'abc123', 'url': 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'title': 'DONT WATCH'},
-                    {'id': 'def456', 'url': 'https://www.youtube.com/watch?v=def456', 'title': 'Video 2'},
-                    ...
-                ]
-            }
-            """
-
-            entries = info['entries']
-            # Filter number of entries
-            if num_downloads: entries = entries[:int(num_downloads)] # Take the first "num_downloads" songs
-
-            urls = [entry['url'] for entry in entries]
-
-            # Writes the URL's songs of the playlist (only the first "num_downloads" songs) in the file "terminal_input.txt"
-            with open('terminal_input.txt', 'w') as file:
-                for url in urls:
-                    file.write(url + '\n')
+        return playlist_name
 
 def terminal():
     with open(url_file, 'r') as file:
@@ -125,19 +82,16 @@ def terminal():
         descargar_musica(url.strip())
 
 def main():
-    # Paths (mobile)
-    dir = os.path.dirname(__file__)
-    out_dir = os.path.dirname(dir)
-    path_AIMP = os.path.join(out_dir, "AIMP")
-    PATHS['download_folder'] = path_AIMP
-
     # Input user
-    playlist_url = input("Playlist: ")
-    # num = input("Numero de canciones a descargar: ") # TODO
+    url = input("Introduzca la URL (de la playlist o la canción): ")
 
-    # Compute
-    update_playlist(playlist_url)
-    terminal()
+    # Computations
+    playlist_name = update_playlist(url)
+    if playlist_name == "not_a_playlist":
+        print("Se ha finalizado la descarga de la canción.")
+    else:
+        terminal()
+        print(f"Se ha finalizado la actualización de la playlist {playlist_name}")
 
 if __name__ == "__main__":
     main()

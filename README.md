@@ -40,11 +40,11 @@ termux-setup-storage
 4. Then, you need to install Python and all the packages needed. Just paste all these commands:
 ```bash
   pkg update
-  pkg install python libjpeg-turbo libpng zlib clang make
+  pkg install python libjpeg-turbo libpng zlib clang make ffmpeg
   pip install yt-dlp mutagen requests Pillow
 ```
 
-5. Create a simple shell script to run the downloader:
+1. Create a simple shell script to run the downloader:
 ```bash
   nano download_yt.sh
 ```
