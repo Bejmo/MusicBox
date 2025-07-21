@@ -15,7 +15,8 @@ def update_playlist(url):
         'quiet': True,
         'extract_flat': True,
         'force_generic_extractor': True,
-        'restrictfilenames': True
+        'restrictfilenames': True,
+        'outtmpl': '%(title)s__%(id)s', #  TODO Antes: os.path.join(PATHS['download_folder'], '%(title)s__%(id)s.%(ext)s')
     }
 
     # Execute yt-dlp
@@ -45,14 +46,13 @@ def update_playlist(url):
             urls = []
             for entry in entries:
                 file_name = ydl.prepare_filename(entry)
-                file_name = f"{file_name.rsplit('-[', 1)[0].strip()}.mp3"
-
-                file_path = os.path.join(PATHS['download_folder'], file_name)
+                file_path = os.path.join(PATHS['download_folder'], f"{file_name}.mp3")
 
                 # If it is now downloaded, it is added to the URL's that will be downloaded
                 if not os.path.exists(file_path):
                     print(f"Se descargará la canción: {file_name}")
                     urls.append(entry['url'])
+            print()
 
 
             # Writes the URL's songs of the playlist in the file f"{url_file_name}_{i}.txt"
@@ -66,7 +66,7 @@ def update_playlist(url):
                     break
         
         else: # It is a song
-            song_name = entry.get('title', '(unknown_title)')
+            song_name = info.get('title', 'unknown_title')
             print(f"Se descargará la canción: {song_name}")
             descargar_musica(url)
             return "not_a_playlist"
@@ -79,7 +79,12 @@ def terminal():
     os.remove(url_file)
     
     for url in list_urls:
-        descargar_musica(url.strip())
+        url = url.split("\n")[0] # Delete the final \n that the url has (in order to print it well)
+        try:
+            name = descargar_musica(url)
+            print(f"Se ha descargado la canción: {name}")
+        except:
+            print(f"ERROR - No se ha podido descargar la canción con URL: {url}. Más información en el fichero \"error_logs_unavailable.txt\"")
 
 def main():
     # Input user

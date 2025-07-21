@@ -1,12 +1,17 @@
 from mutagen.easyid3 import EasyID3
 
 from download_thumnails import *
+import os
 
 """
 Modifica la metadata de un archivo de audio.
 Modificar el título, artista, álbum y fecha de lanzamiento.
 """
 def modificar_metadata(archivo, info):
+    if not os.path.isfile(archivo):
+        print(f"El archivo {archivo} no existe.")
+        return
+
     titulo = "NO HAY TITULO"
     try:
         titulo = info.get('title', 'Desconocido')

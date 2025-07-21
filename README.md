@@ -14,6 +14,7 @@ This project is a simple attempt to create an Android app that downloads music v
 downloads/
 ├── AIMP    # All downloaded music
 └── modules # Python source files
+- Note: The name of the files has the video id. That's because, if two songs have the same name, the program may fail updating the playlist.
 
 ---
 
