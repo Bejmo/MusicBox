@@ -14,6 +14,6 @@ pip install yt-dlp mutagen requests Pillow
 echo "cd storage/downloads/MusicBox" > musicbox.sh
 echo "python3 main.py" >> musicbox.sh
 
-echo "alias yt=\"sh musicbox\"" >> ~/.bashrc
+echo "alias yt=\"sh musicbox.sh\"" >> ~/.bashrc
 
 rm -rf ./MusicBox
