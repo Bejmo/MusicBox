@@ -50,6 +50,7 @@ def get_new_songs(url):
 
             # Set download_folder's name
             playlist_name = info.get('title', 'no_name') # Gets the playlist name (if not, returns "no_name")
+            print(f"Se iniciará la actualización de la playlist {playlist_name}")
             PATHS['download_folder'] = os.path.join(PATHS['download_folder'], playlist_name)
 
             entries = info['entries']
