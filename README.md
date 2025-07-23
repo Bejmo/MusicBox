@@ -1,7 +1,7 @@
 # MusicBox  
 **(Android app experiment to download music using yt-dlp and Python)**
 
-This project is a simple attempt to create an Android app that downloads music via YouTube playlists. It uses Python and yt-dlp. Due to permission restrictions in the Play Store version of Termux, I didn’t finish the full app with a proper interface. However, you *can* run the Python script in Termux to download music—though the interface is quite basic.
+This project is a simple attempt to create an Android app that downloads music via YouTube playlists. It uses Python and yt-dlp. Due to permission restrictions in the Play Store version of Termux, I didn’t finish the full app with a proper interface. However, you *can* run the Python script in Termux to download music.
 
 ## How does it work?  
 - All the core Python files are located in the `/modules` folder (other files can be ignored). Run the script by executing `main.py`.
