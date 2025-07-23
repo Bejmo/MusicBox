@@ -5,9 +5,9 @@ import os
 import csv
 
 # Global variables to store the name of the file that contains the url's of the songs to download
-url_file = ""
-url_file_name = "terminal_input"
-
+URL_FILE = ""
+URL_FILE_NAME = "terminal_input"
+DATABASE_FILE_NAME = "playlists.csv"
 
 # Download playlist functions
 
@@ -66,14 +66,14 @@ def get_new_songs(url):
             print()
 
 
-            # Writes the URL's songs of the playlist in the file f"{url_file_name}_{i}.txt"
+            # Writes the URL's songs of the playlist in the file f"{URL_FILE_NAME}_{i}.txt"
             for i in range(100):
-                if not os.path.exists(f'{url_file_name}_{i}.txt'):
-                    with open(f'{url_file_name}_{i}.txt', 'w') as file:
+                if not os.path.exists(f'{URL_FILE_NAME}_{i}.txt'):
+                    with open(f'{URL_FILE_NAME}_{i}.txt', 'w') as file:
                         for url in urls:
                             file.write(url + '\n')
-                    global url_file
-                    url_file = f"{url_file_name}_{i}.txt"
+                    global URL_FILE
+                    URL_FILE = f"{URL_FILE_NAME}_{i}.txt"
                     break
         
         else: # It is a song
@@ -88,9 +88,9 @@ def get_new_songs(url):
 Downloads the files.
 """
 def download():
-    with open(url_file, 'r') as file:
+    with open(URL_FILE, 'r') as file:
         list_urls = file.readlines()
-    os.remove(url_file)
+    os.remove(URL_FILE)
     
     for url in list_urls:
         url = url.split("\n")[0] # Delete the final \n that the url has (in order to print it well)
@@ -99,69 +99,6 @@ def download():
             print(f"Se ha descargado la canción: {name}")
         except:
             print(f"ERROR - No se ha podido descargar la canción con URL: {url}. Más información en el fichero \"error_logs_unavailable.txt\"")
-
-
-# INPUT FUNCTIONS
-
-"""
-Asks the user if they want to save the used playlist
-"""
-def ask_if_save_playlist(url, name_playlist):
-    playlist_file_name = "playlists.csv"
-
-    response = ""
-    allowed_values = ["S", "s", "N", "n"]
-    while not response in allowed_values:
-        if response != "": print("Valor inválido. Vuelva a intentarlo")
-        response = input("Quiere guardar la playlist usada? (s/n) ")
-
-    if response == "S" or response == "s":
-        with open(playlist_file_name, "a", newline='') as f:
-            writer = csv.DictWriter(f, fieldnames=["nombre_playlist","url"])
-            # We have to write the header if the file does not exists or has nothing inside.
-            if not os.path.exists(playlist_file_name) or os.path.getsize(playlist_file_name) == 0:
-                writer.writeheader()
-            writer.writerow({"nombre_playlist": name_playlist, "url": url})
-
-"""
-Charges the playlists saved in memory previously
-"""
-def charge_playlists():
-    playlist_file_name = "playlists.csv"
-
-    playlists = []
-    if os.path.exists(playlist_file_name): # If exists, it uses it
-        with open(playlist_file_name, "r", newline='') as f:
-            reader = csv.DictReader(f)
-            for row in reader:
-                playlists.append([row["nombre_playlist"], row["url"]])
-    else: # Create the file if it doesn't exist
-        with open(playlist_file_name, "w", newline='') as f:
-            writer = csv.DictWriter(f, fieldnames=["nombre_playlist","url"])
-            writer.writeheader()
-
-    return playlists
-
-"""
-Deletes the playlist in the "i" row 
-"""
-def delete_playlist(i):
-    playlist_file_name = "playlists.csv"
-
-    # Read all the rows except from the ones that we want to delete
-    new_rows = []
-    with open(playlist_file_name, "r", newline='') as f:
-        reader = csv.DictReader(f)
-        j = 1
-        for row in reader:
-            if i != j: new_rows.append(row)
-            j += 1
-
-    # Overwrite the file
-    with open(playlist_file_name, "w", newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=["nombre_playlist", "url"])
-        writer.writeheader()
-        writer.writerows(new_rows)
 
 """
 Downloads the playlist given its url.
@@ -177,6 +114,82 @@ def download_playlist(url):
     print(f"Se ha finalizado la actualización de la playlist {playlist_name}")
     return playlist_name
 
+
+# INPUT FUNCTIONS
+
+"""
+Asks the user if they want to save the used playlist
+"""
+def ask_if_save_playlist(url, name_playlist):
+    response = ""
+    allowed_values = ["S", "s", "N", "n"]
+    while not response in allowed_values:
+        if response != "": print("Valor inválido. Vuelva a intentarlo")
+        response = input("Quiere guardar la playlist usada? (s/n) ")
+
+    if response == "S" or response == "s":
+        with open(DATABASE_FILE_NAME, "a", newline='') as f:
+            writer = csv.DictWriter(f, fieldnames=["nombre_playlist","url"])
+            # We have to write the header if the file does not exists or has nothing inside.
+            if not os.path.exists(DATABASE_FILE_NAME) or os.path.getsize(DATABASE_FILE_NAME) == 0:
+                writer.writeheader()
+            writer.writerow({"nombre_playlist": name_playlist, "url": url})
+
+
+# DATABASE FUNCTIONS
+
+"""
+Charges the playlists saved in memory previously
+"""
+def charge_playlists():
+    playlists = []
+    if os.path.exists(DATABASE_FILE_NAME): # If exists, it uses it
+        with open(DATABASE_FILE_NAME, "r", newline='') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                playlists.append([row["nombre_playlist"], row["url"]])
+    else: # Create the file if it doesn't exist
+        with open(DATABASE_FILE_NAME, "w", newline='') as f:
+            writer = csv.DictWriter(f, fieldnames=["nombre_playlist","url"])
+            writer.writeheader()
+
+    return playlists
+
+"""
+Deletes the playlist in the "i" row 
+"""
+def delete_playlist(i):
+    
+
+    # Read all the rows except from the ones that we want to delete
+    new_rows = []
+    with open(DATABASE_FILE_NAME, "r", newline='') as f:
+        reader = csv.DictReader(f)
+        j = 1
+        for row in reader:
+            if i != j: new_rows.append(row)
+            j += 1
+
+    print("Se ha eliminado la playlist seleccionada.")
+
+    # Overwrite the file
+    with open(DATABASE_FILE_NAME, "w", newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=["nombre_playlist", "url"])
+        writer.writeheader()
+        writer.writerows(new_rows)
+
+"""
+Checks if the playlist is already in the database
+"""
+def playlist_in_database(url):
+    with open(DATABASE_FILE_NAME, 'r', newline='') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            if row["url"] == url: return True
+    return False
+
+
+
 """
 Main function
 """
@@ -188,7 +201,7 @@ def main():
     if not playlists:
         url = input("Introduzca la URL (de la playlist o la canción): ")
         name_playlist = download_playlist(url)
-        if name_playlist: ask_if_save_playlist(url, name_playlist)
+        if name_playlist and not playlist_in_database(url): ask_if_save_playlist(url, name_playlist)
 
     # Exists saved playlists
     else:
@@ -203,7 +216,7 @@ def main():
                 first = False
                 print("Opciones extra:")
                 print("-1: Eliminar playlist existente")
-                print("0: Introducir playlist manualmente")
+                print("0: Introducir URL manualmente")
 
                 print("Playlists guardadas: ")
                 i = 0
@@ -226,6 +239,7 @@ def main():
             first = True
             while i < 1 or i > num_playlists:
                 if not first: print("Índice inválido")
+                else: first = False
                 try:
                     i = int(input("¿Qué playlist desea eliminar?: "))
                 except ValueError: i = -2
@@ -236,7 +250,7 @@ def main():
         elif i == 0:
             url = input("Introduzca la URL (de la playlist o la canción): ")
             name_playlist = download_playlist(url)
-            if name_playlist: ask_if_save_playlist(url, name_playlist)
+            if name_playlist and not playlist_in_database(url): ask_if_save_playlist(url, name_playlist)
          
         # The user wants to use a saved playlist
         else:
