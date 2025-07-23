@@ -44,7 +44,6 @@ sh ./MusicBox/modules/install.sh
 
 3. Reboot **Termux** and you will be able to execute the scrit by just typing `yt` on **Termux**.
 
-
 ## Known issues & future improvements
 
 - **Unavailable videos in playlists:** These need to be removed manually for smoother operation. You can find a list of problematic videos in `error_logs_not_saved.txt` (after you execute the script).
