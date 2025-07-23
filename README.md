@@ -26,7 +26,7 @@ downloads/
 
 ## How to use it on your mobile device (with Termux)
 
-1. Choose a folder on your device to place the `/modules` folder from this repository. You can rename it—I'll use **MusicBox** as an example.  
+1. Choose a folder on your device to place the `/modules` folder from this repository. You can rename it, I'll use **MusicBox** as an example.  
    Recommended location: `/storage/downloads/MusicBox`
 
    *Tip:* Use the **Files** app on Android for easy folder creation.
