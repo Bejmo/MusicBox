@@ -1,5 +1,7 @@
 # FOLLOW THE INSTRUCTIONS FROM THE README.md
 
+# Manual commands:
+
 # termux-setup-storage
 # pkg install git
 # git clone https://github.com/Bejmo/MusicBox.git

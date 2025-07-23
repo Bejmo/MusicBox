@@ -26,54 +26,23 @@ downloads/
 
 ## How to use it on your mobile device (with Termux)
 
-1. Choose a folder on your device to place the `/modules` folder from this repository. You can rename it, I'll use **MusicBox** as an example.  
-   Recommended location: `/storage/downloads/MusicBox`
+1. Install **Termux** from the Play Store.
 
-   *Tip:* Use the **Files** app on Android for easy folder creation.
-
-2. Install **Termux** from the Play Store.
-
-3. Open Termux and give it permission to access your storage by running:
+2. Open Termux and paste the next 4 commands
 ```bash
 termux-setup-storage
 ```
-
-4. Then, you need to install Python and all the packages needed. Just paste all these commands:
 ```bash
-  pkg update
-  pkg install python libjpeg-turbo libpng zlib clang make ffmpeg
-  pip install yt-dlp mutagen requests Pillow
+pkg install git
 ```
-
-1. Create a simple shell script to run the downloader:
 ```bash
-  nano download_yt.sh
+git clone https://github.com/Bejmo/MusicBox.git
 ```
-Paste the following:
-```
-  cd storage/downloads/MusicBox
-  python3 main.py
-```
-Save the file (`Ctrl + S`) and exit (`Ctrl + X`).
-
-
-6. Run the script by typing:
 ```bash
-  sh download_yt.sh
+sh ./MusicBox/modules/install.sh
 ```
-But if you want it to be shorter, go to pass number 7.
 
-7. *(Optional but recommended)* Create a shortcut command to run the script easily:
-```bash
-  nano ~/.bashrc
-```
-Add this line at the end (you can change `yt` to any command you prefer):
-```bash
-  alias yt="sh download_yt.sh"
-```
-Save the file (`Ctrl + S`) and exit (`Ctrl + X`).
-
-8. Reboot **Termux** and you will be able to execute the scrit by just typing `yt` on **Termux**.
+3. Reboot **Termux** and you will be able to execute the scrit by just typing `yt` on **Termux**.
 
 
 ## Known issues & future improvements
