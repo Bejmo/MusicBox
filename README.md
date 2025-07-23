@@ -81,3 +81,17 @@ Save the file (`Ctrl + S`) and exit (`Ctrl + X`).
 - **Unavailable videos in playlists:** These need to be removed manually for smoother operation. You can find a list of problematic videos in `error_logs_not_saved.txt` (after you execute the script).
 - **Album art may be missing:** Sometimes the metadata (including cover art) isn’t properly saved on some files (if the portrait is not downlaoded, you can see the missing song in `error_logs_not_saved.txt`).
 - **Update functionality:** Currently, the script only adds new songs from the playlist but does not remove files that no longer exist in the playlist. I'd like to add this feature in the future.
+
+
+## 🚨 **Legal Warning** 🚨
+
+This script uses **yt-dlp**, a tool for downloading content from various websites, including videos and audio. 
+
+**Usage of this script to download copyrighted content without proper authorization may violate terms of service of platforms and copyright laws in many jurisdictions.**
+
+### Responsible Use:
+- Use this script only to download content that is legally available or has a license allowing download.
+- **Do not use this script to download copyrighted content without explicit permission from the copyright holder.**
+- The repository maintainer is not responsible for any illegal or improper use of this script.
+
+By using this script, you agree that you are fully responsible for your actions and must comply with all local laws and platform terms of service.
