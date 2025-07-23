@@ -16,4 +16,4 @@ echo "python3 main.py" >> musicbox.sh
 
 echo "alias yt=\"sh musicbox\"" >> ~/.bashrc
 
-rm -r ./MusicBox
+rm -rf ./MusicBox
