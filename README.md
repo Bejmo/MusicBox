@@ -44,12 +44,15 @@ sh ./MusicBox/modules/install.sh
 
 3. Reboot **Termux** and you will be able to execute the scrit by just typing `yt` on **Termux**.
 
+---
+
 ## Known issues & future improvements
 
 - **Unavailable videos in playlists:** These need to be removed manually for smoother operation. You can find a list of problematic videos in `error_logs_not_saved.txt` (after you execute the script).
 - **Album art may be missing:** Sometimes the metadata (including cover art) isn’t properly saved on some files (if the portrait is not downlaoded, you can see the missing song in `error_logs_not_saved.txt`).
 - **Update functionality:** Currently, the script only adds new songs from the playlist but does not remove files that no longer exist in the playlist. I'd like to add this feature in the future.
 
+---
 
 ## 🚨 **Legal Warning** 🚨
 
