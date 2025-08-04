@@ -7,7 +7,7 @@ import traceback
 
 """
 Downloads the music from a YouTube Video
-PRE: It mustn't be a playlist
+PRE: It can't be a playlist
 """
 def descargar_musica(url):
     ydl_opts = {

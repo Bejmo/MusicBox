@@ -9,7 +9,20 @@ URL_FILE = ""
 URL_FILE_NAME = "terminal_input"
 DATABASE_FILE_NAME = "playlists.csv"
 
-# Download playlist functions
+
+# Structs
+
+class Playlist:
+    def __init__(self, name, url):
+        self.name = name
+        self.url = url
+
+    def __repr__(self):
+        return f"Playlist(name={self.name}, url={self.url})"
+
+
+
+# Playlist functions
 
 """
 Downloads the new songs of the playlist (the ones that are now downloaded on the devide)
@@ -51,7 +64,7 @@ def get_new_songs(url):
             # Set download_folder's name
             playlist_name = info.get('title', 'no_name') # Gets the playlist name (if not, returns "no_name")
             print(f"Se iniciará la actualización de la playlist {playlist_name}")
-            PATHS['download_folder'] = os.path.join(PATHS['download_folder'], playlist_name)
+            PATHS['download_folder'] = os.path.join(PATHS['original_folder'], playlist_name)
 
             entries = info['entries']
             urls = []
@@ -63,8 +76,6 @@ def get_new_songs(url):
                 if not os.path.exists(file_path):
                     print(f"Se descargará la canción: {file_name}")
                     urls.append(entry['url'])
-            print()
-
 
             # Writes the URL's songs of the playlist in the file f"{URL_FILE_NAME}_{i}.txt"
             for i in range(100):
@@ -83,6 +94,29 @@ def get_new_songs(url):
             return "not_a_playlist"
 
         return playlist_name
+
+"""
+Deletes the songs download locally that are not in the playlist
+"""
+def delete_old_songs(url):
+    pass
+    # Recorrer canciones descargadas
+
+        # Verificar que la canción está en la playlist
+
+        # Si no lo está, eliminar
+
+
+"""
+Updates all the saved playlists.
+"""
+def update_all_playlists():
+    # Read all the saved playlists
+    playlists = get_playlists()
+
+    for playlist in playlists:
+        url = playlist.url
+        download_playlist(url)
 
 """
 Downloads the files.
@@ -139,15 +173,16 @@ def ask_if_save_playlist(url, name_playlist):
 # DATABASE FUNCTIONS
 
 """
-Charges the playlists saved in memory previously
+Returns the playlists saved in memory as a list.
 """
-def charge_playlists():
+def get_playlists():
     playlists = []
     if os.path.exists(DATABASE_FILE_NAME): # If exists, it uses it
         with open(DATABASE_FILE_NAME, "r", newline='') as f:
             reader = csv.DictReader(f)
             for row in reader:
-                playlists.append([row["nombre_playlist"], row["url"]])
+                playlist = Playlist(row["nombre_playlist"], row["url"])
+                playlists.append(playlist)
     else: # Create the file if it doesn't exist
         with open(DATABASE_FILE_NAME, "w", newline='') as f:
             writer = csv.DictWriter(f, fieldnames=["nombre_playlist","url"])
@@ -156,11 +191,9 @@ def charge_playlists():
     return playlists
 
 """
-Deletes the playlist in the "i" row 
+Deletes the playlist in the "i" row
 """
 def delete_playlist(i):
-    
-
     # Read all the rows except from the ones that we want to delete
     new_rows = []
     with open(DATABASE_FILE_NAME, "r", newline='') as f:
@@ -195,7 +228,7 @@ Main function
 """
 def main():
     # Read saved playlists
-    playlists = charge_playlists()
+    playlists = get_playlists()
 
     # No playlists found, then we use it normally
     if not playlists:
@@ -208,20 +241,21 @@ def main():
         num_playlists = len(playlists)
 
         # Select if the user wants to use a saved playlist
-        i = -2
+        i = -3
         first = True # This is for making a print when the user puts an invalid input
-        while i < -1 or i > num_playlists:
+        while i < -2 or i > num_playlists:
             if not first: print("Número inválido. Vuelva a intentarlo.")
             else:
                 first = False
                 print("Opciones extra:")
-                print("-1: Eliminar playlist existente")
+                print("-2: Eliminar playlist existente")
+                print("-1: Actualizar todas las playlists")
                 print("0: Introducir URL manualmente")
 
                 print("Playlists guardadas: ")
                 i = 0
                 for playlist in playlists:
-                    print(f"{i + 1}: {playlist[0]}")
+                    print(f"{i + 1}: {playlist.name}")
                     i += 1
                     
             try:
@@ -229,7 +263,7 @@ def main():
             except ValueError: i = -2
 
         # The user wants to delete an existing playlist
-        if i == -1:
+        if i == -2:
             print("Playlists guardadas: ")
             j = 0
             for playlist in playlists:
@@ -246,12 +280,17 @@ def main():
 
             delete_playlist(i)
 
+        # The user wants to update all the saved playlists
+        elif i == -1:
+            print("Se actualizarán todas las playlist.")
+            update_all_playlists()
+
         # The user wants to use a new playlist
         elif i == 0:
             url = input("Introduzca la URL (de la playlist o la canción): ")
             name_playlist = download_playlist(url)
             if name_playlist and not playlist_in_database(url): ask_if_save_playlist(url, name_playlist)
-         
+        
         # The user wants to use a saved playlist
         else:
             url = playlists[i - 1][1]
