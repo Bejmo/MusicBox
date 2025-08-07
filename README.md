@@ -10,6 +10,9 @@ This project is a simple attempt to create an Android app that downloads music v
   - If the playlist was downloaded before, it will try to find and download only new songs, updating the playlist folder.
   - **Note:** The folder is named **AIMP** because that's the music player I use, but you can rename it to whatever you prefer.
 - When you run the script, simply provide the URL of the YouTube playlist, and it will download or update the music accordingly.
+  - Update the playlist means:
+    - It deletes all the local songs that are no longer in the playlist
+    - It downloads the songs that are not in local but in the playlist.
 - Example folder structure (if you put the project inside your `Downloads` folder):
 downloads/
 ├── AIMP    # All downloaded music

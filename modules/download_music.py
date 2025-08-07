@@ -1,9 +1,7 @@
 import os
-from yt_dlp import YoutubeDL
+from yt_dlp import YoutubeDL # type: ignore
 from metadata import modificar_metadata
-from paths import PATHS
-import requests
-import traceback
+from global_variables import *
 
 """
 Downloads the music from a YouTube Video
@@ -19,9 +17,10 @@ def descargar_musica(url):
             'preferredquality': '192',
         }],
         'ignoreerrors': True,
-        'outtmpl': os.path.join(PATHS['download_folder'], '%(title)s__%(id)s.%(ext)s'),
+        'outtmpl': os.path.join(PATHS['download_folder'], f'%(title)s{SEPARATOR}%(id)s.%(ext)s'),
         'restrictfilenames': True,  # Use save filenames
         'no_warnings': True, # Delete warnings
+        'no_fragment': True,
     }
 
     with YoutubeDL(ydl_opts) as ydl:

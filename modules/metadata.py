@@ -1,4 +1,4 @@
-from mutagen.easyid3 import EasyID3
+from mutagen.easyid3 import EasyID3 # type: ignore
 
 from download_thumnails import *
 import os

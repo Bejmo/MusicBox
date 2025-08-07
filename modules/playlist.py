@@ -1,8 +1,8 @@
 # This file contains the main functions for managing playlists #
 
 from download_music import descargar_musica
-from yt_dlp import YoutubeDL
-from paths import PATHS
+from yt_dlp import YoutubeDL # type: ignore
+from global_variables import *
 import os
 import csv
 
@@ -27,8 +27,8 @@ class Playlist:
 Changes the download path to the path with the name of the given playlist.
 PRE: The url is a playlist.
 """
-def change_download_path(url):
-    playlist_name = get_playlist_name(url)
+def change_download_path(url, ydl=None):
+    playlist_name = get_playlist_name(url, ydl)
     PATHS['download_folder'] = os.path.join(PATHS['original_folder'], playlist_name)
 
 """
@@ -36,14 +36,14 @@ Returns the name of the playlist. You can give the ydl command, in order to don'
 If it's not a playlist, returns NONE.
 PRE: The url is a playlist.
 """
-def get_playlist_name(url, ydl):
+def get_playlist_name(url, ydl=None):
     if not ydl:
         ydl_opts = {
             'quiet': True,
             'extract_flat': True,
             'force_generic_extractor': True,
             'restrictfilenames': True,
-            'outtmpl': '%(title)s__%(id)s'
+            'outtmpl': f'%(title)s{SEPARATOR}%(id)s'
         }
         with YoutubeDL(ydl_opts) as ydl:
             return get_playlist_name(url, ydl)
@@ -51,11 +51,27 @@ def get_playlist_name(url, ydl):
     else:
         info = ydl.extract_info(url, download=False)
         if 'entries' in info: # If it is a playlist
-            return i.get('title', 'no_name')
+            return info.get('title', 'no_name')
         return "NONE"
 
 """
+Returns a set with the id's of the videos in the given playlist
+"""
+def get_playlist_songs(url):
+    ydl_opts = {
+        'quiet': True,
+        'extract_flat': True,
+        'force_generic_extractor': True,
+        'restrictfilenames': True,
+        'outtmpl': f'%(title)s{SEPARATOR}%(id)s'
+    }
+    with YoutubeDL(ydl_opts) as ydl:
+        info = ydl.extract_info(url, download=False)
+        return {entry['id'] for entry in info.get('entries', [])}
+
+"""
 Downloads the new songs of the playlist (the ones that are not downloaded on the devide)
+Raises Exception if the URL is not valid
 """
 def get_new_songs(url):
     # Options yt-dlp
@@ -64,7 +80,7 @@ def get_new_songs(url):
         'extract_flat': True,
         'force_generic_extractor': True,
         'restrictfilenames': True,
-        'outtmpl': '%(title)s__%(id)s',
+        'outtmpl': f'%(title)s{SEPARATOR}%(id)s',
     }
 
     # Execute yt-dlp
@@ -74,7 +90,6 @@ def get_new_songs(url):
         except Exception as e:
             print(f"Error extracting info: {e}")
             raise Exception("Failed to extract information from the URL.")
-            return "not_a_playlist"
 
         if 'entries' in info: # It is a playlist
             """
@@ -94,7 +109,7 @@ def get_new_songs(url):
             # Set download_folder's name
             playlist_name = info.get('title', 'no_name') # Gets the playlist name (if not, returns "no_name")
             print(f"Se iniciará la actualización de la playlist {playlist_name}")
-            PATHS['download_folder'] = os.path.join(PATHS['original_folder'], playlist_name)
+            change_download_path(url, ydl) # TODO PROBAR SI DA ERROR
 
             entries = info['entries']
             urls = []
@@ -120,30 +135,34 @@ def get_new_songs(url):
         else: # It is a song
             song_name = info.get('title', 'unknown_title')
             print(f"Se descargará la canción: {song_name}")
-            descargar_musica(url)
+            try:
+                descargar_musica(url)
+            except:
+                print(f"ERROR - No se ha podido descargar la canción con URL: {url}. Más información en el fichero \"error_logs_unavailable.txt\"")
+
             return "not_a_playlist"
 
         return playlist_name
 
 """
 Deletes the songs download locally that are not in the playlist
+PRE: The url must be a playlist
 """
 def delete_old_songs(url):
-    PATHS['download_folder'] = os.path.join(PATHS['original_folder'], playlist_name)
+    # change_download_path(url)
+    songs_playlist = get_playlist_songs(url)
 
-    # Recorrer canciones descargadas
-    downloaded_songs = os.listdir(PATHS['download_folder'])
+    songs = os.listdir(PATHS['download_folder'])
+    downloaded_songs = {song.split(SEPARATOR)[1].split('.')[0] for song in songs} # This may not work, but I tested and it seems to (@TODO)
+
+    # Go through all the songs and delete the song if it is not in the playlist
     for song in downloaded_songs:
-        song_name, _ = os.path.splitext(song)  # Remove file extension
-        song_url = f"https://www.youtube.com/watch?v={song_name}"  # Construct URL based on song name
-        if song_url not in urls:
-            print(f"Eliminando canción: {song}")
-            os.remove(os.path.join(PATHS['download_folder'], song))
-
-        # Verificar que la canción está en la playlist
-
-        # Si no lo está, eliminar
-
+        if song not in songs_playlist:
+            # Remove files that match the song title
+            for file in songs:
+                if song in file:
+                    print(f"Eliminando canción que no está en la playlist: {file.split(SEPARATOR)[0]}")
+                    os.remove(os.path.join(PATHS['download_folder'], file))
 
 """
 Updates all the saved playlists.
@@ -183,6 +202,7 @@ def download_playlist(url):
         return # TODO PUEDE QUE FALLE (si falla, poner "")
 
     download()
+    delete_old_songs(url)
     print(f"Se ha finalizado la actualización de la playlist {playlist_name}")
     return playlist_name
 
@@ -213,7 +233,7 @@ def get_playlists():
 """
 Deletes the playlist in the "i" row
 """
-def delete_playlist(i):
+def delete_playlist(i, playlist_name):
     # Read all the rows except from the ones that we want to delete
     new_rows = []
     with open(DATABASE_FILE_NAME, "r", newline='') as f:
@@ -223,7 +243,7 @@ def delete_playlist(i):
             if i != j: new_rows.append(row)
             j += 1
 
-    print("Se ha eliminado la playlist seleccionada.")
+    print(f"Se ha eliminado la playlist {playlist_name}.")
 
     # Overwrite the file
     with open(DATABASE_FILE_NAME, "w", newline='') as f:

@@ -1,5 +1,4 @@
 from playlist import *
-import os
 
 # INPUT FUNCTIONS
 
@@ -35,7 +34,8 @@ def main():
         num_playlists = len(playlists)
 
         # Select if the user wants to use a saved playlist
-        i = -3
+        init = -3
+        i = init
         first = True # This is for making a print when the user puts an invalid input
         while i < -2 or i > num_playlists:
             if not first: print("Número inválido. Vuelva a intentarlo.")
@@ -51,17 +51,16 @@ def main():
                 for playlist in playlists:
                     print(f"{i + 1}: {playlist.name}")
                     i += 1
-                    
             try:
                 i = int(input("Seleccione el índice de la playlist a actualizar: "))
-            except ValueError: i = -2
+            except ValueError: i = init
 
         # The user wants to delete an existing playlist
         if i == -2:
             print("Playlists guardadas: ")
             j = 0
             for playlist in playlists:
-                print(f"{j + 1}: {playlist.name}") # HEY TODO
+                print(f"{j + 1}: {playlist.name}")
                 j += 1
 
             first = True
@@ -72,7 +71,7 @@ def main():
                     i = int(input("¿Qué playlist desea eliminar?: "))
                 except ValueError: i = -2
 
-            delete_playlist(i)
+            delete_playlist(i, playlist.name)
 
         # The user wants to update all the saved playlists
         elif i == -1:
@@ -91,4 +90,7 @@ def main():
             download_playlist(url)
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\nSe ha detenido el programa.")
