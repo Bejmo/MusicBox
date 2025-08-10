@@ -3,10 +3,13 @@ from mutagen.easyid3 import EasyID3 # type: ignore
 from download_thumnails import *
 import os
 
+class MetadataError(Exception):
+    pass
+
 """
 Modifica la metadata de un archivo de audio.
 Modificar el título, artista, álbum y fecha de lanzamiento.
-Raises: FileNotFoundError
+Raises: FileNotFoundError, MetadataError
 """
 def modificar_metadata(archivo, info):
     if not os.path.isfile(archivo):
@@ -30,9 +33,9 @@ def modificar_metadata(archivo, info):
     try:
         audio = EasyID3(archivo)
     except: # TODO NO ESTA TESTEADO ESTA PARTE
-        print("Error al guardar los metadatos.")
         with open("error_logs_not_saved.txt", 'a') as f:
             f.write(f"No se ha guardado: {titulo} \n")
+        raise MetadataError("Error al guardar los metadatos.")
     
     try:
         audio['title'] = titulo
@@ -50,9 +53,9 @@ def modificar_metadata(archivo, info):
     try:
         audio.save()
     except: # TODO NO ESTA TESTEADO ESTA PARTE
-        print("Error al guardar los metadatos.")
         with open("error_logs_not_saved.txt", 'a') as f:
             f.write(f"No se ha guardado (.save): {titulo} \n")
+        raise MetadataError("Error al guardar los metadatos.")
 
 
     # Añadir carátula
