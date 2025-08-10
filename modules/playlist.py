@@ -175,6 +175,8 @@ def update_all_playlists():
         url = playlist.url
         download_playlist(url)
 
+    print("Se han actualizado todas las playlists")
+
 """
 Downloads the files.
 """
@@ -188,8 +190,9 @@ def download():
         try:
             name = descargar_musica(url)
             print(f"Se ha descargado la canción: {name}")
-        except:
-            print(f"ERROR - No se ha podido descargar la canción con URL: {url}. Más información en el fichero \"error_logs_unavailable.txt\"")
+        except Exception as e:
+            print(f"ERROR - No se ha podido descargar la canción con URL: {url}. Más información: {e}")
+            # print(f"ERROR - No se ha podido descargar la canción con URL: {url}. Más información en el fichero \"error_logs_unavailable.txt\"")
 
 """
 Downloads the playlist given its url.
@@ -202,7 +205,7 @@ def download_playlist(url):
         return # TODO PUEDE QUE FALLE (si falla, poner "")
 
     download()
-    delete_old_songs(url)
+    # delete_old_songs(url)
     print(f"Se ha finalizado la actualización de la playlist {playlist_name}")
     return playlist_name
 

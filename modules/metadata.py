@@ -6,11 +6,11 @@ import os
 """
 Modifica la metadata de un archivo de audio.
 Modificar el título, artista, álbum y fecha de lanzamiento.
+Raises: FileNotFoundError
 """
 def modificar_metadata(archivo, info):
     if not os.path.isfile(archivo):
-        print(f"El archivo {archivo} no existe.")
-        return
+        raise FileNotFoundError(f"El archivo {archivo} no existe.")
 
     titulo = "NO HAY TITULO"
     try:

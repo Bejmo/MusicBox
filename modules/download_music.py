@@ -27,9 +27,13 @@ def descargar_musica(url):
         info = ydl.extract_info(url, download=True)
         try:
             file_path = ydl.prepare_filename(info)
-            file_path = file_path.replace('.webm', '.mp3').replace('.m4a', '.mp3') # Change format
-            modificar_metadata(file_path, info)
+            file_path = file_path.replace('.webm', '.mp3').replace('.m4a', '.mp3').replace('.mp4', '.mp3') # Change format
+            try:
+                modificar_metadata(file_path, info)
+            except FileNotFoundError as e:
+                print(e)
         except:
+            print(f"File path: {file_path}") #TODO
             with open("error_logs_unavailable.txt", "a") as log_file:
                 log_file.write(f"Error al descargar el vídeo: [{url}]\n")
         finally:
