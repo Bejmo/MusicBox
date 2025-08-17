@@ -69,3 +69,13 @@ This script uses **yt-dlp**, a tool for downloading content from various website
 - The repository maintainer is not responsible for any illegal or improper use of this script.
 
 By using this script, you agree that you are fully responsible for your actions and must comply with all local laws and platform terms of service.
+
+
+
+
+## COMMAND FOR DEVELOPERS
+
+- Put on the server:
+  - uvicorn main_fastAPI:app --reload
+- Server dependencies:
+  - pip install python-multipart fastapi uvicorn gtts

@@ -20,6 +20,9 @@ class Playlist:
     def __repr__(self):
         return f"Playlist(name={self.name}, url={self.url})"
 
+# Exceptions
+class NotAPlaylistError(Exception):
+    pass
 
 # Playlist functions #
 
@@ -35,6 +38,7 @@ def change_download_path(url, ydl=None):
 Returns the name of the playlist. You can give the ydl command, in order to don't create more requests.
 If it's not a playlist, returns NONE.
 PRE: The url is a playlist.
+Raises NotAPlaylistError
 """
 def get_playlist_name(url, ydl=None):
     if not ydl:
@@ -52,7 +56,7 @@ def get_playlist_name(url, ydl=None):
         info = ydl.extract_info(url, download=False)
         if 'entries' in info: # If it is a playlist
             return info.get('title', 'no_name')
-        return "NONE"
+        raise NotAPlaylistError
 
 """
 Returns a set with the id's of the videos in the given playlist
@@ -70,10 +74,10 @@ def get_playlist_songs(url):
         return {entry['id'] for entry in info.get('entries', [])}
 
 """
-Downloads the new songs of the playlist (the ones that are not downloaded on the devide)
+Downloads the new songs of the playlist (the ones that are not downloaded on the device)
 Raises Exception if the URL is not valid
 """
-def get_new_songs(url):
+def get_new_songs(url, downloaded_files):
     # Options yt-dlp
     ydl_opts = {
         'quiet': True,
@@ -100,7 +104,7 @@ def get_new_songs(url):
                 'title': 'Nombre de la playlist',
                 'entries': [
                     {'id': 'abc123', 'url': 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'title': 'DONT WATCH'},
-                    {'id': 'def456', 'url': 'https://www.youtube.com/watch?v=def456', 'title': 'Video 2'},
+                    {'id': 'def456', 'url': 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'title': 'Video 2'},
                     ...
                 ]
             }
@@ -109,7 +113,7 @@ def get_new_songs(url):
             # Set download_folder's name
             playlist_name = info.get('title', 'no_name') # Gets the playlist name (if not, returns "no_name")
             print(f"Se iniciará la actualización de la playlist {playlist_name}")
-            change_download_path(url, ydl) # TODO PROBAR SI DA ERROR
+            change_download_path(url, ydl)
 
             entries = info['entries']
             urls = []
@@ -118,9 +122,14 @@ def get_new_songs(url):
                 file_path = os.path.join(PATHS['download_folder'], f"{file_name}.mp3")
 
                 # If it is now downloaded, it is added to the URL's that will be downloaded
-                if not os.path.exists(file_path):
+                # @TODO Revisar si funciona correctamente
+                if (downloaded_files and file_name not in downloaded_files) or (not downloaded_files and not os.path.exists(file_path)):
                     print(f"Se descargará la canción: {file_name}")
                     urls.append(entry['url'])
+                else:
+                    if file_name not in downloaded_files:
+                        print(f"Se descargará la canción: {file_name}")
+                        urls.append(entry['url'])
 
             # Writes the URL's songs of the playlist in the file f"{URL_FILE_NAME}_{i}.txt"
             for i in range(100):
@@ -173,7 +182,7 @@ def update_all_playlists():
 
     for playlist in playlists:
         url = playlist.url
-        download_playlist(url)
+        update_playlist(url)
 
     print("Se han actualizado todas las playlists")
 
@@ -181,6 +190,8 @@ def update_all_playlists():
 Downloads the files.
 """
 def download():
+    files = []
+
     with open(URL_FILE, 'r') as file:
         list_urls = file.readlines()
     os.remove(URL_FILE)
@@ -189,29 +200,66 @@ def download():
         url = url.split("\n")[0] # Delete the final \n that the url has (in order to print it well)
         try:
             name = descargar_musica(url)
+            files.append(os.path.join(PATHS['download_folder'],f"{name}.mp3"))
             print(f"Se ha descargado la canción: {name}")
         except Exception as e:
             print(f"ERROR - No se ha podido descargar la canción con URL: {url}. Más información: {e}")
             # print(f"ERROR - No se ha podido descargar la canción con URL: {url}. Más información en el fichero \"error_logs_unavailable.txt\"")
 
+    return files
+
 """
-Downloads the playlist given its url.
-Returns True if it is a playlist, False otherwise.
+Downloads the playlist given its url. You can give (optionally) the files that you have already downloaded.
+Returns the name of the playlist if it is a playlist.
 """
-def download_playlist(url):
-    playlist_name = get_new_songs(url)
+def update_playlist(url, downloaded_files=[]):
+    playlist_name = get_new_songs(url, downloaded_files)
     if playlist_name == "not_a_playlist":
         print("Se ha finalizado la descarga de la canción.")
-        return # TODO PUEDE QUE FALLE (si falla, poner "")
+        return
 
-    download()
+    files = download()
     # delete_old_songs(url)
     print(f"Se ha finalizado la actualización de la playlist {playlist_name}")
-    return playlist_name
+    if not downloaded_files: return playlist_name
+    return files
 
+"""
+Returns the name of the new songs of the playlist (the ones that are not downloaded on the device)
+PRE: The URL has to be a playlist
+Raises Exception if the URL is not valid or if it's not a playlist
+"""
+def get_songs_playlist(url, downloaded_files):
+    # Options yt-dlp
+    ydl_opts = {
+        'quiet': True,
+        'extract_flat': True,
+        'force_generic_extractor': True,
+        'restrictfilenames': True,
+        'outtmpl': f'%(title)s{SEPARATOR}%(id)s',
+    }
 
+    # Execute yt-dlp
+    with YoutubeDL(ydl_opts) as ydl:
+        try:
+            info = ydl.extract_info(url, download=False)
+        except Exception as e:
+            print(f"Error extracting info: {e}")
+            raise Exception("Failed to extract information from the URL.")
+        if 'entries' not in info: raise NotAPlaylistError("El enlace indicado no es una playlist.")
+        
+        # playlist_name = info.get('title', 'no_name') # Gets the playlist name
 
+        entries = info['entries']
+        urls = []
+        for entry in entries:
+            file_name = ydl.prepare_filename(entry)
 
+            # If it is not downloaded, it is added to the URL's that will be downloaded
+            if (file_name not in downloaded_files):
+                urls.append(entry['url'])
+
+        return urls
 
 # DATABASE FUNCTIONS #
 

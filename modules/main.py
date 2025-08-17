@@ -26,7 +26,7 @@ def main():
     # No playlists found, then we use it normally
     if not playlists:
         url = input("Introduzca la URL (de la playlist o la canción): ")
-        name_playlist = download_playlist(url)
+        name_playlist = update_playlist(url)
         if name_playlist and not playlist_in_database(url): ask_if_save_playlist(name_playlist, url)
 
     # Exists saved playlists
@@ -81,13 +81,13 @@ def main():
         # The user wants to use a new playlist
         elif i == 0:
             url = input("Introduzca la URL (de la playlist o la canción): ")
-            name_playlist = download_playlist(url)
+            name_playlist = update_playlist(url)
             if name_playlist and not playlist_in_database(url): ask_if_save_playlist(name_playlist, url)
         
         # The user wants to use a saved playlist
         else:
             url = playlists[i - 1].url
-            download_playlist(url)
+            update_playlist(url)
 
 if __name__ == "__main__":
     try:

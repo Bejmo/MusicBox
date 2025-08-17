@@ -1,57 +1,48 @@
 package com.musicbox
 
-import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import android.content.Context
-import android.content.Intent
+import android.Manifest
+import android.content.ContentValues
 import android.content.pm.PackageManager
+import android.os.Build
+import android.os.Bundle
+import android.os.Environment
+import android.provider.MediaStore
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
-import androidx.core.content.ContextCompat
-import java.io.File
+import android.widget.TextView
+import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
-import android.Manifest
-import android.os.Environment
+import androidx.core.content.ContextCompat
+import kotlinx.coroutines.*
+import okhttp3.*
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import okio.IOException
+import java.io.File
 
 class MainActivity : AppCompatActivity() {
-    // Path variables
-    private val termuxPackage = "com.termux"
-    private val scriptName = "terminal_mobile.py"
-    private val scriptDir by lazy {
-        File(getExternalFilesDir(Environment.DIRECTORY_MUSIC), "MusicBox").absolutePath
-    }
-    private val scriptPath by lazy { "$scriptDir/$scriptName" }
 
+    private val client = OkHttpClient.Builder()
+        .connectTimeout(2, java.util.concurrent.TimeUnit.MINUTES) // tiempo para conectarse al servidor
+        .writeTimeout(10, java.util.concurrent.TimeUnit.MINUTES)  // tiempo para enviar la petición
+        .readTimeout(10, java.util.concurrent.TimeUnit.MINUTES)   // tiempo para recibir la respuesta
+        .build()
+    private lateinit var editTextUrl: EditText
+    private lateinit var buttonDownload: Button
+    private lateinit var textViewStatus: TextView
+    private val serverUrl = "http://10.0.2.2:8000"
+
+    @RequiresApi(Build.VERSION_CODES.Q)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
 
-        // Initialize permissions and copy script
-        getPermissions()
-        copyScript()
+        editTextUrl = findViewById(R.id.editTextPlaylistUrl)
+        buttonDownload = findViewById(R.id.buttonDownload)
+        textViewStatus = findViewById(R.id.textViewStatus)
 
-        // Setup UI interactions
-        val button = findViewById<Button>(R.id.confirmURL)
-        val inputURL = findViewById<EditText>(R.id.URLinput)
-        button.setOnClickListener {
-            val url = inputURL.text.toString().trim()
-            executePythonScript(this, url)
-        }
-    }
-
-    // Request write permissions if needed
-    private fun getPermissions() {
+        // Pedir permisos de almacenamiento
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
             != PackageManager.PERMISSION_GRANTED
         ) {
@@ -61,76 +52,121 @@ class MainActivity : AppCompatActivity() {
                 1
             )
         }
-    }
 
-    // Copy the Python script from assets to external storage if not already copied
-    private fun copyScript() {
-        val directory = File(scriptDir)
-        if (!directory.exists()) {
-            val created = directory.mkdirs()
-            if (!created) {
-                showErrorDialog("Error", "Failed to create directory: $scriptDir")
-                return
+        buttonDownload.setOnClickListener {
+            val url = editTextUrl.text.toString()
+            if (url.isNotEmpty()) {
+                downloadPlaylist(url)
             }
         }
+    }
 
-        val destination = File(scriptPath)
-        if (!destination.exists()) {
+    @RequiresApi(Build.VERSION_CODES.Q)
+    private fun downloadPlaylist(playlistUrl: String) {
+        CoroutineScope(Dispatchers.IO).launch {
             try {
-                val inputStream = assets.open(scriptName)
-                destination.outputStream().use { fileOut ->
-                    inputStream.copyTo(fileOut)
+                // 1. Obtener nombre de la playlist
+                val playlistName = callGetPlaylistName(playlistUrl)
+                val folder = File(getExternalFilesDir("downloads/AIMP"), playlistName)
+                if (!folder.exists()) folder.mkdirs()
+                if (!folder.exists()) folder.mkdirs()
+
+                // 2. Obtener lista de canciones pendientes
+                val downloadedFiles = folder.list()?.toList() ?: emptyList()
+                val songs = callGetSongsPlaylist(playlistUrl, downloadedFiles)
+
+                // 3. Descargar cada canción
+                for (songUrl in songs) {
+                    val fileName = downloadSong(songUrl, playlistName)
+                    withContext(Dispatchers.Main) {
+                        textViewStatus.text = "Descargada: $fileName"
+                    }
                 }
-                Toast.makeText(this, "Script copied to $scriptDir", Toast.LENGTH_SHORT).show()
+
+                withContext(Dispatchers.Main) {
+                    textViewStatus.text = "¡Descarga completada!"
+                }
+
             } catch (e: Exception) {
-                e.printStackTrace()
-                showErrorDialog("Error copying script", e.message ?: "Unknown error")
+                withContext(Dispatchers.Main) {
+                    textViewStatus.text = "Error: ${e.message}"
+                }
             }
-        } else {
-            Toast.makeText(this, "Script already exists in $scriptDir", Toast.LENGTH_SHORT).show()
         }
     }
 
-    // Execute the python script through Termux passing input string via echo
-    private fun executePythonScript(context: Context, url: String) {
-        // Check if Termux is installed
-        val termuxInstalled = try {
-            context.packageManager.getPackageInfo(termuxPackage, 0)
-            true
-        } catch (e: PackageManager.NameNotFoundException) {
-            false
-        }
-
-        if (!termuxInstalled) {
-            showErrorDialog("Error", "Termux is not installed")
-            return
-        }
-
-        val escapedInput = url.replace("\"", "\\\"")
-        val command = "echo \"$escapedInput\" | \\$(which python) $scriptPath"
-
-        val intent = Intent("com.termux.RUN_COMMAND").apply {
-            setClassName(termuxPackage, "com.termux.app.RunCommandService")
-            putExtra("com.termux.RUN_COMMAND_PATH", "/data/data/com.termux/files/usr/bin/sh")
-            putExtra("com.termux.RUN_COMMAND_ARGUMENTS", arrayOf("-c", command))
-            putExtra("com.termux.RUN_COMMAND_BACKGROUND", true)
-        }
-
-        try {
-            context.startService(intent)
-            Toast.makeText(context, "Executing script on Termux...", Toast.LENGTH_SHORT).show()
-        } catch (e: Exception) {
-            e.printStackTrace()
-            showErrorDialog("Failed to start Termux service", e.message ?: "Unknown error")
+    private fun callGetPlaylistName(url: String): String {
+        val requestBody = RequestBody.create(
+            "application/json".toMediaTypeOrNull(),
+            """{"url":"$url"}"""
+        )
+        val request = Request.Builder()
+            .url("$serverUrl/get_playlist_name/")
+            .post(requestBody)
+            .build()
+        client.newCall(request).execute().use { response ->
+            if (!response.isSuccessful) throw IOException("Error en get_playlist_name")
+            return response.body?.string()?.replace("\"", "") ?: throw IOException("Nombre inválido")
         }
     }
 
-    // Show a dialog with error message
-    private fun showErrorDialog(title: String, message: String) {
-        AlertDialog.Builder(this)
-            .setTitle(title)
-            .setMessage(message)
-            .setPositiveButton("OK", null)
-            .show()
+    private fun callGetSongsPlaylist(url: String, downloaded: List<String>): List<String> {
+        val downloadedJson = downloaded.joinToString(prefix = "[\"", separator = "\",\"", postfix = "\"]")
+        val requestBody = RequestBody.create(
+            "application/json".toMediaTypeOrNull(),
+            """{"url":"$url","downloaded_files":$downloadedJson}"""
+        )
+        val request = Request.Builder()
+            .url("$serverUrl/get_songs_playlist/")
+            .post(requestBody)
+            .build()
+        client.newCall(request).execute().use { response ->
+            if (!response.isSuccessful) throw IOException("Error en get_songs_playlist")
+            val body = response.body?.string() ?: "[]"
+            return body.replace("[","").replace("]","").replace("\"","").split(",").filter { it.isNotEmpty() }
+        }
     }
+
+    @RequiresApi(Build.VERSION_CODES.Q)
+    private fun downloadSong(songUrl: String, playlistName: String): String {
+        val requestBody = RequestBody.create(
+            "application/json".toMediaTypeOrNull(),
+            """{"url":"$songUrl"}"""
+        )
+        val request = Request.Builder()
+            .url("$serverUrl/download_video/")
+            .post(requestBody)
+            .build()
+
+        client.newCall(request).execute().use { response ->
+            if (!response.isSuccessful) throw IOException("Error descargando $songUrl")
+
+            val disposition = response.header("Content-Disposition") ?: "archivo.mp3"
+            val fileName = disposition.substringAfter("filename=").replace("\"", "")
+
+            val resolver = contentResolver
+            val contentValues = ContentValues().apply {
+                put(MediaStore.MediaColumns.DISPLAY_NAME, fileName)
+                put(MediaStore.MediaColumns.MIME_TYPE, "audio/mpeg")
+                put(
+                    MediaStore.MediaColumns.RELATIVE_PATH,
+                    Environment.DIRECTORY_DOWNLOADS + "/AIMP/$playlistName"
+                )
+            }
+
+            val uri = resolver.insert(MediaStore.Downloads.EXTERNAL_CONTENT_URI, contentValues)
+                ?: throw IOException("No se pudo crear el archivo en Downloads")
+
+            response.body?.byteStream()?.use { input ->
+                resolver.openOutputStream(uri)?.use { output ->
+                    input.copyTo(output)
+                    output.flush()
+                }
+            }
+
+            Log.d("DOWNLOAD", "Archivo guardado en: $uri")
+            return fileName
+        }
+    }
+
 }
