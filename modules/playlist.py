@@ -253,7 +253,7 @@ def get_songs_playlist(url, downloaded_files):
         entries = info['entries']
         urls = []
         for entry in entries:
-            file_name = ydl.prepare_filename(entry)
+            file_name = ydl.prepare_filename(entry) + '.mp3'
 
             # If it is not downloaded, it is added to the URL's that will be downloaded
             if (file_name not in downloaded_files):

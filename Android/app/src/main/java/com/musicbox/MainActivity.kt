@@ -67,13 +67,15 @@ class MainActivity : AppCompatActivity() {
             try {
                 // 1. Obtener nombre de la playlist
                 val playlistName = callGetPlaylistName(playlistUrl)
-                val folder = File(getExternalFilesDir("downloads/AIMP"), playlistName)
-                if (!folder.exists()) folder.mkdirs()
+                val downloadsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
+                val folder = File(downloadsDir, "AIMP/$playlistName")
                 if (!folder.exists()) folder.mkdirs()
 
                 // 2. Obtener lista de canciones pendientes
                 val downloadedFiles = folder.list()?.toList() ?: emptyList()
                 val songs = callGetSongsPlaylist(playlistUrl, downloadedFiles)
+                Log.d("DEBUG_PLAYLIST", "Archivos detectados en la carpeta: $downloadedFiles") // @TODO QUITAR
+                Log.d("DEBUG_USED_FILES", "Archivos que se descargarán: $songs") // @TODO QUITAR
 
                 // 3. Descargar cada canción
                 for (songUrl in songs) {
