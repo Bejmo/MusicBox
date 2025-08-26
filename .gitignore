@@ -5,3 +5,4 @@
 /modules/__pycache__
 /modules/playlists.csv
 /.venv/
+/modules/error_logs_unavailable.txt
