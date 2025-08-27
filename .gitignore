@@ -1,7 +1,6 @@
 /env/
 /AIMP/
 /.vscode/
-/Android/
 /modules/__pycache__
 /modules/playlists.csv
 /.venv/
