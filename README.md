@@ -73,8 +73,9 @@ By using this script, you agree that you are fully responsible for your actions 
 
 
 
-## COMMAND FOR DEVELOPERS
-
+## COMMANDS FOR DEVELOPERS
+- Install dependencies
+  - pip install -r dependencies.txt
 - Put on the server:
   - uvicorn main_fastAPI:app --reload
 - Server dependencies:
